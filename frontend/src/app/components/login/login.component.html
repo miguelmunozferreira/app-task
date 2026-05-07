@@ -1,0 +1,27 @@
+<div class="container mt-5">
+  <form>
+    <div class="mb-3">
+      <label for="emailLogin" class="form-label text-white"
+        >Email address</label
+      >
+      <input
+        type="email"
+        class="form-control"
+        id="emailLogin"
+        [(ngModel)]="email"
+        name="email"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="passwordLogin" class="form-label text-white">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="passwordLogin"
+        [(ngModel)]="password"
+        name="password"
+      />
+    </div>
+    <button class="btn btn-primary" (click)="login()">Enter</button>
+  </form>
+</div>
